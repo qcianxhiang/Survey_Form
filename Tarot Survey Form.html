@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tarot Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    
+     <header>
+      <h1 id="title">Tarot Survey Form</h1>
+      <p id="description">Thank you for taking time to help us improve the Tarot service</p>
+     </header>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"></label>
+        <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your email"></label>
+        <label id="number-label">Age <input id="number" type="number" min="13" max="130" placeholder="Age"></label>
+        <label id="gender-label"><input id="gender" type="radio" name="male-female" class="inline" value="Female"> Female</label>
+        <label id="gender-label"><input id="gender" type="radio" name="male-female" class="inline" value="Male"> Male</label>
+    </fieldset>
+
+
+    <fieldset>
+      <label>Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option>Select current role</option>
+          <option>Full Time Job</option>
+          <option>Student</option>
+          <option>Full Time Learner</option>
+          <option>Other</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+      <label>What is your situation right now?</label>
+      <label><input type="radio" name="situation" class="inline" value="very annoying"> very annoying</label>
+      <label><input type="radio" name="situation" class="inline" value="a bit annoying"> a bit annoying</label>
+      <label><input type="radio" name="situation" class="inline" value="soso, just wanna ask something"> soso, just wanna ask something</label>
+    </fieldset>
+
+    <fieldset>
+      <label>Type of question you want to ask</label>
+      <select>
+        <option>Select an option</option>
+        <option>Relationship</option>
+        <option>Career</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label>Question Background: (optional) </label>
+      <label><input type="checkbox" class="inline" value="long distance relationship"> long distance relationship 異地戀</label>
+      <label><input type="checkbox" class="inline" value="unrequited love/secret love"> unrequited love/secret love 單戀/暗戀</label>
+      <label><input type="checkbox" class="inline" value="get back together"> get back together 復合</label>
+      <label><input type="checkbox" class="inline" value="break up"> break up 鬧分手</label>
+      <label><input type="checkbox" class="inline" value="graduate looking for a job"> graduate looking for a job 畢業找工作</label>
+      <label><input type="checkbox" class="inline" value="colleage/supervisor pressure"> colleage/supervisor pressure 同事/上司壓力</label>
+      <label><input type="checkbox" class="inline" value="pomotion/raise income"> pomotion/raise income升遷/加薪</label>
+      <label><input type="checkbox" class="inline" value="talent work"> talent work天賦工作</label>
+    </fieldset>
+   
+   <fieldset>
+      <label>Simple Background：
+        <textarea type="textarea" placeholder="short description"></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit"></input>
+    </form>
+
+  </body>
+</html>

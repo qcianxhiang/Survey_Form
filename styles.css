@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: url(https://wallpaperaccess.com/full/2058148.jpg) no-repeat center fixed; /* background-image始終有留白的地方，做不到覆蓋整個screen */
+  background-size: cover;
+}
+
+
+
+h1, p {
+  margin: 10px;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+
+  background-color: #B75100CC;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block; /* label和label會隔一行 */
+  margin: 0.5rem 0;
+  /* border: 1px solid black; 用border看距離 */
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%; /* input(輸入資料),textarea,select佔據整行 */
+  font-size: 0.9rem;
+
+}
+
+.inline {
+  width: unset; /* radio是input的1種，不想radio和文本(Female)各一行，用class再unset width一次 */
+}
+
+fieldset {
+  border: none;
+  padding: 10px 0;
+  /* border: 1px solid blue; 用border看距離 */
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #3b3b4f;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #239E02;
+  border-color: #B75100CC;
+  min-width: 300px;
+}
